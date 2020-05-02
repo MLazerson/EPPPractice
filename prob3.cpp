@@ -18,7 +18,7 @@ int main() {
 		cin >> value;
 		mylist.addFront(value);
 	}
-	//cout << "Reg sum LL " << mylist.getSum() << endl;
+	cout << "Reg sum LL " << mylist.getSum() << endl;
 	cout << "getSumRecurseHelper: " << mylist.getSumRecurseHelper() << endl;
 	//system("pause"); // comment/uncomment if needed
 }

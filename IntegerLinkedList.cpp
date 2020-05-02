@@ -3,11 +3,12 @@
 #include "IntegerLinkedList.h"
 #include <iostream>
 int IntegerLinkedList::getSum() {
+  SNode *current = head;
   int sum = 0;
-  while (head != nullptr) {
+  while (current != nullptr) {
     //std::cout << head->elem << std::endl;
-    sum = sum + head->elem;
-    head = head->next;
+    sum = sum + current->elem;
+    current = current->next;
   }
   return sum;
 }
